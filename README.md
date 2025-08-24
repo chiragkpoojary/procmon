@@ -37,7 +37,7 @@ cargo install procman
 
 If you do not have Rust and Cargo installed, download precompiled binaries from GitHub Releases:
 
-[GitHub Releases](https://github.com/chiragkpoojary/procmon/releases)
+[GitHub Releases](https://github.com/chiragkpoojary/ProcMan/releases)
 
 After downloading, make it executable (Linux/macOS):
 
