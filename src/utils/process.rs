@@ -3,7 +3,7 @@ use procfs::process;
 
 pub fn process() -> Vec<ProcessStruct> {
     let mut processes_vec = Vec::new();
-
+    let (_cols, rows) = crossterm::terminal::size().unwrap();
     let all_processes = process::all_processes();
     match all_processes {
         Ok(processes) => {
@@ -24,8 +24,8 @@ pub fn process() -> Vec<ProcessStruct> {
                                     priority:stat.priority,
                                     nice:stat.nice,
                                     num_thread:stat.num_threads,
-                                    memory_rss:stat.rss/1024/1024,
-                                    memory_vsz:stat.vsize/1024/1024,
+                                    memory_rss:stat.rss/1024,
+                                    memory_vsz:stat.vsize/1024,
                                
 
 
@@ -48,5 +48,7 @@ pub fn process() -> Vec<ProcessStruct> {
         Err(e) => eprintln!("Failed to read processes: {}", e),
     }
 
+    processes_vec.sort_by(|a, b| b.cpu.partial_cmp(&a.cpu).unwrap());
     processes_vec
+
 }

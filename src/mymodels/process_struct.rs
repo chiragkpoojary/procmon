@@ -1,3 +1,4 @@
+#[derive(Clone)]
 pub struct ProcessStruct {
     pub pid: i32,
 

@@ -1,9 +1,19 @@
 [package]
-name = "ProcMon"
+name = "procmon"
 version = "0.1.0"
 edition = "2024"
+authors = ["Chirag K Poojary"]
+description = "A process monitor like top/htop written in Rust"
 
+repository = "https://github.com/chiragkpoojary/procman"
+homepage = "https://github.com/chiragkpoojary/procman"
+readme = "README.md"
 [dependencies]
-clap = "4.5.45"
+
+crossterm = "0.29.0"
+prettytable = "0.10.0"
 procfs = "0.17.0"
+
+
+[build-dependencies]
 
