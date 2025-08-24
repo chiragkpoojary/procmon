@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 authors = ["Chirag K Poojary"]
 description = "A process monitor like top/htop written in Rust"
-
+license = "MIT"
 repository = "https://github.com/chiragkpoojary/procman"
 homepage = "https://github.com/chiragkpoojary/procman"
 readme = "README.md"
