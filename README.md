@@ -29,7 +29,7 @@ It allows you to view running processes, CPU and memory usage, number of threads
 If you have Rust and Cargo installed, you can install ProcMan globally:
 
 ```bash
-cargo install procman
+cargo install procmon
 ```
 
 
