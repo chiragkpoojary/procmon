@@ -1,4 +1,4 @@
-# ProcMan
+# ProcMon
 
 [![Crates.io](https://img.shields.io/crates/v/procmon.svg)](https://crates.io/crates/procmon)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
