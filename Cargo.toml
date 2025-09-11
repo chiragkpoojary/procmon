@@ -1,6 +1,6 @@
 [package]
 name = "procmon"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["Chirag K Poojary"]
 description = "ProcMon: terminal-based process monitor in Rust. Displays CPU, memory, threads, and priority in real-time."
