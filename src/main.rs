@@ -15,13 +15,19 @@ use mymodels::process_struct::ProcessStruct;
 
 use std::{io, thread};
 use std::time::Duration;
-use crossterm::{execute, terminal::{Clear, ClearType}, cursor::MoveTo, terminal::EnterAlternateScreen};
+use terminal_size::{terminal_size, Height, Width};
+use crossterm::{execute, terminal::{Clear, ClearType}, cursor::MoveTo, terminal::EnterAlternateScreen, terminal};
 
 fn main() {
-    let (_cols, rows) = crossterm::terminal::size().unwrap();
-    let header_rows = 25; // for example
-    let visible_rows = rows as usize - header_rows;
-println!("rows{}",rows);
+
+    let (_cols, rows) = terminal_size().unwrap();
+    let header_rows: usize = 3;
+
+    let visible_rows: usize = if let Some((Width(_), Height(rows))) = terminal_size() {
+        rows as usize - header_rows
+    } else {
+        10
+    };
     execute!(io::stdout(), EnterAlternateScreen).unwrap();
 let offset=0;
     loop {

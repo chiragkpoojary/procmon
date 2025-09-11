@@ -5,14 +5,16 @@ edition = "2024"
 authors = ["Chirag K Poojary"]
 description = "A process monitor like top/htop written in Rust"
 license = "MIT"
-repository = "https://github.com/chiragkpoojary/procman"
-homepage = "https://github.com/chiragkpoojary/procman"
+repository = "https://github.com/chiragkpoojary/procmon"
+homepage = "https://github.com/chiragkpoojary/procmon"
 readme = "README.md"
 [dependencies]
 
-crossterm = "0.29.0"
+
 prettytable = "0.10.0"
 procfs = "0.17.0"
+terminal_size = "0.4.3"
+crossterm = "0.29.0"
 
 
 [build-dependencies]

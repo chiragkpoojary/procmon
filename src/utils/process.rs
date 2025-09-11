@@ -1,9 +1,10 @@
 use crate::mymodels::process_struct::ProcessStruct;
 use procfs::process;
 
+
 pub fn process() -> Vec<ProcessStruct> {
     let mut processes_vec = Vec::new();
-    let (_cols, rows) = crossterm::terminal::size().unwrap();
+
     let all_processes = process::all_processes();
     match all_processes {
         Ok(processes) => {
