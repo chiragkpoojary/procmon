@@ -3,7 +3,8 @@ name = "procmon"
 version = "0.1.0"
 edition = "2024"
 authors = ["Chirag K Poojary"]
-description = "A process monitor like top/htop written in Rust"
+description = "ProcMon: terminal-based process monitor in Rust. Displays CPU, memory, threads, and priority in real-time."
+
 license = "MIT"
 repository = "https://github.com/chiragkpoojary/procmon"
 homepage = "https://github.com/chiragkpoojary/procmon"
