@@ -39,7 +39,7 @@ If you do not have Rust and Cargo installed, download precompiled binaries from 
 
 [GitHub Releases](https://github.com/chiragkpoojary/ProcMan/releases)
 
-After downloading, make it executable (Linux/macOS):
+After downloading, make it executable (Linux):
 
 ```bash
 chmod +x procmon
